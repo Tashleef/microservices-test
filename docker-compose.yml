@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+    user:
+        build: ./user
+        container_name: user_service
+        ports:
+            - "3001:3001"
+        depends_on:
+            - notification
+        environment:
+            NOTIFICATION_URL: "http://notification:3002"
+
+    notification:
+        build: ./notification
+        container_name: notification_service
+        ports:
+            - "3002:3002"

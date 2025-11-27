@@ -1,0 +1,48 @@
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+**/dist/
+
+# Environment files
+.env
+**/.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.dockerfile
+docker-compose.override.yml
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Optional npm / Yarn files
+package-lock.json
+yarn.lock
+
+# NestJS compiled files
+**/*.js
+**/*.js.map
+**/*.d.ts
+
+# Coverage
+coverage/
+**/coverage/
+
+# Misc
+.tmp/
