@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "482b7e19-e6db-41aa-924a-946920e12bda",
+		"name": "Notification Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18163098"
+	},
+	"item": [
+		{
+			"name": "Notification",
+			"item": [
+				{
+					"name": "Get All Notifications",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3002/notifications",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"notifications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Notification",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": 1,\n    \"message\": \"Welcome Faek Alayoubi! Your account has been created.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3002/notifications",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"notifications"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
